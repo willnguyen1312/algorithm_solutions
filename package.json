@@ -8,7 +8,7 @@
     "lint": "eslint . --ext \".js,.ts,.tsx\"",
     "test": "jest --watch",
     "cover": "jest --coverage",
-    "cover:ci": "jest cover && yarn report",
+    "cover:ci": "yarn cover && yarn report",
     "report": "COVERALLS_SERVICE_NAME=circleci coveralls ./coverage/lcov.info"
   },
   "keywords": [],
