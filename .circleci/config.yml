@@ -12,7 +12,4 @@ jobs:
           command: yarn install
       - run:
           name: Jest's runner
-          command: yarn cover
-          # Environment variable for a single command shell
-          environment:
-            COVERALLS_SERVICE_NAME: circleci
+          command: yarn cover:ci

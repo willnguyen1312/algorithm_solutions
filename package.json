@@ -7,7 +7,9 @@
     "typecheck": "tsc",
     "lint": "eslint . --ext \".js,.ts,.tsx\"",
     "test": "jest --watch",
-    "cover": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "cover": "jest --coverage",
+    "cover:ci": "jest cover && yarn report",
+    "report": "COVERALLS_SERVICE_NAME=circleci coveralls ./coverage/lcov.info"
   },
   "keywords": [],
   "author": "Nam Nguyen <nam.nguyen.node@gmail.com>",
