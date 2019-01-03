@@ -4,9 +4,9 @@
  *
  * @returns {Number} result
  */
-function camelcase(str) {
+function caesarCipher(str) {
   const isUpper = letter => letter.toUpperCase() === letter
   return str.split('').filter(isUpper).length + 1
 }
 
-export { camelcase }
+export { caesarCipher as camelcase }
