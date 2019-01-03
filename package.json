@@ -37,7 +37,8 @@
     "@types/node": "10.12.18"
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": [
+    "*.{js,ts}": [
+      "eslint --fix",
       "prettier --trailing-comma es5 --single-quote --write",
       "git add"
     ]
