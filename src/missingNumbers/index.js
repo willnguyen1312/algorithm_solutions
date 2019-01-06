@@ -20,7 +20,7 @@ function missingNumbers(listA, listB) {
 
   for (let key in dataSet) {
     if (dataSet.hasOwnProperty(key)) {
-      if (dataSet[key] > 0) {
+      if (dataSet[key]) {
         results.push(key)
       }
     }

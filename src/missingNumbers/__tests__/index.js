@@ -8,6 +8,6 @@ describe('missingNumbers', () => {
     ]
 
     const expectedOutput1 = [204, 205, 206]
-    expect(missingNumbers(...input1)).toEqual(expectedOutput1)
+    expect(missingNumbers(input1[0], input1[1])).toEqual(expectedOutput1)
   })
 })

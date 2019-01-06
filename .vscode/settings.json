@@ -6,5 +6,6 @@
         "typescript"
     ],
     "eslint.autoFixOnSave": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "javascript.implicitProjectConfig.checkJs": true
 }
