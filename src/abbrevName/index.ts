@@ -1,4 +1,7 @@
 export function abbrevName(name: string): string {
-  const regexPattern = /([A-Z])\w*\s([A-Z])\w*/
-  return name.replace(regexPattern, '$1.$2')
+  function replacer(match, p1: string, p2: string, offset, string) {
+    return p1.toUpperCase() + '.' + p2.toUpperCase()
+  }
+  const regexPattern = /([A-z])[A-z]*\s*\.*([A-z])[A-z]*/
+  return name.replace(regexPattern, replacer)
 }
